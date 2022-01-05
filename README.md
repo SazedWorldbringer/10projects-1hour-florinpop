@@ -1,4 +1,4 @@
-## Florin's Pops 10 JavaScript Projects in 1 Hour Challenge
+## Florin Pop's 10 JavaScript Projects in 1 Hour Challenge
 
 1. Hamburger Button
 
