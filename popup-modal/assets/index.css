@@ -1,0 +1,79 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* BASE STYLING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF9EC;
+    color: #5D2A42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* PROJECT */
+
+.btn {
+    background-color: #FB6376;
+    color: #FFF9EC;
+    padding: 1rem 2rem;
+    border-radius: .75rem;
+    border: none;
+    font-family: inherit;
+    transition: 300ms;
+    box-shadow: .3rem .3rem #5D2A42;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: .1rem .1rem #5D2A42;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(41, 100%, 96%, .5);
+
+    display: none; /* Default */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #FFDCCC;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem #FB6376;
+    padding: 2rem;
+    width: 500px;
+    position: relative;
+}
+
+.popup .btn {
+    background: #FCB1A6;
+    color: #FFF9EC;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+
+.popup .btn:hover, 
+.popup .btn:focus {
+    box-shadow: inset 0 2px 12px #FB6376;
+}
+
