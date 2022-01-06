@@ -22,7 +22,7 @@ body {
     position: fixed;
     top: -1vh;
     transform: translateY(0);
-    animation: fall 3s linear;
+    animation: fall 3s linear forwards;
 }
 
 @keyframes fall {

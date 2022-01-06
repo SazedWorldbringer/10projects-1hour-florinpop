@@ -1,4 +1,5 @@
-const interval = 300
+const addHeartInterval = 500
+const removeHeartInterval = 5000
 const arr = ["❤️", "💜", "💛", "💙", "🤍"]
 function createHeart() {
     const heart = document.createElement('div')
@@ -11,6 +12,10 @@ function createHeart() {
     heart.style.animationDuration = Math.random() * 2 + 3 +'s'
 
     document.body.appendChild(heart)
+
+    setTimeout(() => {
+        heart.remove()
+    }, removeHeartInterval);
 }
 
-setInterval(createHeart, interval);
+setInterval(createHeart, addHeartInterval);
