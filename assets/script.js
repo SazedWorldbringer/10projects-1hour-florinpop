@@ -8,4 +8,11 @@ function mobileMenu() {
 
 navToggleBtn.addEventListener("click", mobileMenu);
 
-// scroll header
+// hide menu when a link is clickded
+const navItem = document.querySelectorAll(".item-link");
+
+function hideMenu() {
+  navMenu.classList.remove("show-menu");
+}
+
+navItem.forEach((n) => n.addEventListener("click", hideMenu));
