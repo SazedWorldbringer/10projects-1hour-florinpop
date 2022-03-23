@@ -1,74 +1,124 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* BASE STYLING */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #9DACFF;
-    color: #5C2751;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    padding: 5rem;
-    transition: all 300ms linear;
+  background-color: #9dacff;
+  color: #5c2751;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  transition: all 300ms linear;
 }
 
 /* PROJECT */
 
 .container {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
+}
+
+.container p {
+  font-size: 30px;
+  margin: 2rem 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container p {
+    font-size: 18px;
+    margin: 2rem 2rem;
+  }
 }
 
 .align-right {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .toggle-container {
-    position: fixed;
-    top: .5rem;
-    right: .5rem;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
-i {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-body.dark {
-    background-color: #5C2751;
-    color: #9DACFF;
+.theme-toggle {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 label {
-    user-select: none;
+  user-select: none;
 }
 
 input {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-/*========== dark and light icons toggle ==========*/
+/* === */
+
+p {
+  max-width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  color: #5c2751;
+}
+
+.arrows {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow {
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  border: 1px solid #5c2751;
+}
+
+/*========== theme toggle ==========*/
+body.dark {
+  background-color: #5c2751;
+  color: #9dacff;
+}
+
 #light {
-    display: inline-block;
+  display: inline-block;
 }
 
 #dark {
-    display: none;
+  display: none;
 }
 
 body.dark #light {
-    display: none;
+  display: none;
 }
 
 body.dark #dark {
-    display: inline-block;
+  display: inline-block;
+}
+
+body.dark a {
+  color: #9dacff;
+}
+
+body.dark .arrow {
+  border: 1px solid #9dacff;
 }

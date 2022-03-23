@@ -1,19 +1,49 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* BASE STYLING */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #DCCDE8;
-    color: #00100B;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    min-height: 100vh;
+  background-color: #dccde8;
+  color: #00100b;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #00100b;
+}
+
+.arrows {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow {
+  background-color: #858ae3;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: 300ms;
+  box-shadow: 0.5rem 0.5rem #fff;
+}
+
+.arrow:hover {
+  box-shadow: 0.3rem 0.3rem #fff;
 }

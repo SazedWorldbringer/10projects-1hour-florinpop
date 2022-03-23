@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/index.css" />
     <title>Pop-up</title>
-</head>
-<body>
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <button class="btn" id="open">Open</button>
 
     <div class="popup-container" id="container">
-        <div class="popup">
-            <button class="btn" id="close">&times;</button>
-            <h1>Kelsier</h1>
-            <p>He's something the Lord Ruler can never kill. He's hope.</p>
-        </div>
+      <div class="popup">
+        <button class="btn" id="close">&times;</button>
+        <h1>Kelsier</h1>
+        <p>He's something the Lord Ruler can never kill. He's hope.</p>
+      </div>
     </div>
+
+    <div class="arrows">
+      <button class="btn">
+        <i class="bx bx-left-arrow-alt"></i>
+        <a href="../index.html#projects">Back Home</a>
+      </button>
+
+      <button class="btn">
+        <a href="../purple-heart-rain/index.html">Next Project</a>
+        <i class="bx bx-right-arrow-alt"></i>
+      </button>
+    </div>
+
     <script src="./assets/index.js"></script>
-</body>
+  </body>
 </html>
+

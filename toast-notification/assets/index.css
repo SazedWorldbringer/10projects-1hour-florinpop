@@ -1,52 +1,79 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* BASE STYLING */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    background-color: #EFFFC8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #efffc8;
+  color: #a5cbc3;
 }
 
 /* CONTAINER */
 #container {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 .toast {
-    background-color: #85CB33;
-    color: #100B00;
-    border-radius: .75rem;
-    padding: 2rem;
-    margin: 1rem;
+  background-color: #85cb33;
+  color: #100b00;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 /* BUTTON */
 .btn {
-    background-color: #100B00;
-    color: #A5CBC3;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    padding: 1rem 1.5rem;
-    border-radius: .75rem;
-    box-shadow: .6rem .6rem #A5CBC3;
-    transition: 300ms all;
+  background-color: #100b00;
+  color: #a5cbc3;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0.6rem 0.6rem #a5cbc3;
+  transition: 300ms all;
+}
+
+a {
+  text-decoration: none;
+  color: #a5cbc3;
+}
+
+.arrows {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow {
+  background-color: #100b00;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 0.6rem 0.6rem #a5cbc3;
+  transition: 300ms;
 }
 
 .btn:hover,
 .btn:focus,
-.btn:active {
-    transform: translateY(.2rem) translateX(.2rem);
-    box-shadow: .2rem .2rem;
+.btn:active,
+.arrow:hover,
+.arrow:active,
+.arrow:focus {
+  transform: translateY(0.2rem) translateX(0.2rem);
+  box-shadow: 0.2rem 0.2rem;
 }

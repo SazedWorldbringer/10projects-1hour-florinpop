@@ -1,32 +1,62 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 /* BASE STYLING */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FCB1A6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    min-height: 100vh;
+  background-color: #fcb1a6;
+  color: #f15156;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
 
 /* PROJECT */
 
 .heart {
-    position: fixed;
-    top: -1vh;
-    transform: translateY(0);
-    animation: fall 3s linear forwards;
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(105vh);
-    }
+  to {
+    transform: translateY(105vh);
+  }
 }
+
+a {
+  text-decoration: none;
+  color: #f15156;
+}
+
+.arrows {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow {
+  background-color: #fffbdb;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 0.5rem 0.5rem #f15156;
+  transition: 300ms;
+}
+
+.arrow:hover,
+.arrow:focus {
+  box-shadow: 0.3rem 0.3rem #f15156;
+}
+
